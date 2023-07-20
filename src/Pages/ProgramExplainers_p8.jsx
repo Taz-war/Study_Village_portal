@@ -8,7 +8,7 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "../Components/Menu";
 import MainMenu from "../Components/MainMenu";
@@ -56,6 +56,7 @@ import pic36 from '../assets/Screenshot_36.png'
 
 
 import { SignalCellularAlt, YouTube } from "@mui/icons-material";
+import { StateContex } from "../Context/StateProvider";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "black" ? "black" : "black",
@@ -66,7 +67,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const ProgramExplainers_p8 = () => {
-  const [open, setOpen] = useState(false);
+  const {open,setOpen}=useContext(StateContex)
 
   return (
     <Box height={"100%"} minWidth={'420px'}>

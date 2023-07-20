@@ -16,10 +16,13 @@ import pic37 from '../assets/Screenshot_37.png';
 import pic38 from '../assets/Screenshot_38.png';
 import pic39 from '../assets/Screenshot_39.png';
 import pic40 from '../assets/Screenshot_40.png';
+import { useContext } from "react";
+import { StateContex } from "../Context/StateProvider";
 
 
 const HomePage = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
+  const {open,setOpen}=useContext(StateContex)
   return (
     <Box sx={{ height: "100vh" }}>
       <Box

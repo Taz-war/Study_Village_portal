@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 // import {HomePage} from '../Pages/HomePage'
 import ProgramExplainers_p8 from "../Pages/ProgramExplainers_p8";
-import HomePage from '../Pages/HomePage';
+import HomePage from "../Pages/HomePage";
 import CompanyProfile from "../Pages/CompanyProfile";
 import StudyVillageStudents from "../Pages/StudyVillageStudents";
 import Counsellors from "../Pages/Counsellors";
@@ -20,8 +20,6 @@ export const router = createBrowserRouter(
       <Route path="/counsellors" element={<Counsellors />} />
       <Route path="/partnership_manager" element={<PartnershipManager />} />
       <Route path="/program_explainers" element={<ProgramExplainers_p8 />} />
-
-
     </>
   )
 );

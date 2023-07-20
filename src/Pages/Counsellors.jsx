@@ -16,6 +16,8 @@ import {
   import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import MainMenu from "../Components/MainMenu";
+import { StateContex } from "../Context/StateProvider";
+import { useContext } from "react";
   const datas = [
     { api_name: "First name", field: "Katy" },
     { api_name: "Last name", field: "Holmes" },
@@ -28,7 +30,7 @@ import MainMenu from "../Components/MainMenu";
   
   const keys = Object.keys(datas);
   const Counsellors = () => {
-    const [open, setOpen] = useState(false);
+    const {open,setOpen}=useContext(StateContex)
     return (
       <Box
         style={{
@@ -59,8 +61,8 @@ import MainMenu from "../Components/MainMenu";
                   width: { xs: "55px", sm: "70px", md: "100px" },
                 }}
               />
-              <MainMenu open={open} setOpen={setOpen} />
               </IconButton>
+              <MainMenu open={open} setOpen={setOpen} />
             </Box>
           </Box>
           <Grid container>

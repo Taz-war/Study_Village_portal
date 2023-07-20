@@ -6,9 +6,9 @@ import { RouterProvider } from "react-router-dom";
 import router from "./router/Router";
 
 function App() {
-  
   return (
     <div className="App">
+
       {/* <HomePage open={open} setOpen={setOpen} /> */}
       {/* <ProgramExplainers_p8 open={open} setOpen={setOpen}/> */}
     </div>

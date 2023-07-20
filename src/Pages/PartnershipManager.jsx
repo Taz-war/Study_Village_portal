@@ -16,6 +16,8 @@ import {
   import SearchIcon from "@mui/icons-material/Search";
 import MainMenu from "../Components/MainMenu";
 import { useState } from "react";
+import { StateContex } from "../Context/StateProvider";
+import { useContext } from "react";
   const datas = [
     { api_name: "First name", field: "Glen" },
     { api_name: "Last name", field: "Meehan" },
@@ -25,7 +27,7 @@ import { useState } from "react";
   ];
   
   const PartnershipManager = () => {
-    const [open, setOpen] = useState(false);
+    const {open,setOpen}=useContext(StateContex)
 
     return (
       <Box
@@ -58,8 +60,8 @@ import { useState } from "react";
                   width: { xs: "55px", sm: "70px", md: "100px" },
                 }}
               />
-              <MainMenu open={open} setOpen={setOpen} />
               </IconButton>
+              <MainMenu open={open} setOpen={setOpen} />
             </Box>
           </Box>
           <h2>
