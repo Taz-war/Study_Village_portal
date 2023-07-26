@@ -18,6 +18,7 @@ import MainMenu from "../Components/MainMenu";
 import { useState } from "react";
 import { StateContex } from "../Context/StateProvider";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
   const datas = [
     { api_name: "First name", field: "Glen" },
     { api_name: "Last name", field: "Meehan" },
@@ -42,6 +43,7 @@ import { useContext } from "react";
           {" "}
           <Box style={{ display: "flex", paddingBottom: "30px" }}>
             <Box sx={{ width: { xs: "75%", sm: "93%", md: "93%", lg: "93%" } }}>
+            <Link to={'/'}>
               <img
                 src={
                   "https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
@@ -49,6 +51,7 @@ import { useContext } from "react";
                 alt="pic"
                 style={{ width: "280px", height: "70px", paddingTop: "20px" }}
               />
+              </Link>
             </Box>
             <Box sx={{ width: { xs: "25%", sm: "7%", md: "7%", lg: "7%" } }}>
             <IconButton onClick={() => setOpen(true)} sx={{alignSelf:'flex-end'}} disableRipple>

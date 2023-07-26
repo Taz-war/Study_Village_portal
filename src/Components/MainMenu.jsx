@@ -27,7 +27,7 @@ const MainMenu = ({ open, setOpen }) => {
         sx={{ width: { xs: 250, sm: 300, md: "100%", lg: "100%" } }}
         display={"flex"}
       >
-        {JSON.stringify(open)}
+       
         <Grid
           container
           columns={12}
@@ -116,7 +116,7 @@ const MainMenu = ({ open, setOpen }) => {
             </Link>
             <br></br>
             <Link
-              to={"/company_profile"}
+              to={"/study_village_resources"}
               onClick={()=>setOpen(false)}
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >

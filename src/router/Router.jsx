@@ -10,6 +10,8 @@ import CompanyProfile from "../Pages/CompanyProfile";
 import StudyVillageStudents from "../Pages/StudyVillageStudents";
 import Counsellors from "../Pages/Counsellors";
 import PartnershipManager from "../Pages/PartnershipManager";
+import StudyVillageResources from '../Pages/StudyVillageResources';
+
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +22,8 @@ export const router = createBrowserRouter(
       <Route path="/counsellors" element={<Counsellors />} />
       <Route path="/partnership_manager" element={<PartnershipManager />} />
       <Route path="/program_explainers" element={<ProgramExplainers_p8 />} />
+      <Route path="/study_village_resources" element={<StudyVillageResources />} />
+
     </>
   )
 );
