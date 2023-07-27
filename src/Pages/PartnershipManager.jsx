@@ -34,15 +34,15 @@ import { Link } from "react-router-dom";
       <Box
         style={{
           backgroundColor: "#121F28",
-          height: "100vh",
+          height: "100%",
   
           overflowY: "hidden",
         }}
       >
-        <Box sx={{ p: { xs: 1, sm: 8, md: 12, lg: 12 } }}>
+        <Box sx={{ p: { xs: 2, sm: 8, md: 12, lg: 12 } }}>
           {" "}
           <Box style={{ display: "flex", paddingBottom: "30px" }}>
-            <Box sx={{ width: { xs: "75%", sm: "93%", md: "93%", lg: "93%" } }}>
+            <Box sx={{ width: { xs: "85%", sm: "93%", md: "93%", lg: "93%" } }}>
             <Link to={'/'}>
               <img
                 src={
@@ -53,7 +53,7 @@ import { Link } from "react-router-dom";
               />
               </Link>
             </Box>
-            <Box sx={{ width: { xs: "25%", sm: "7%", md: "7%", lg: "7%" } }}>
+            <Box sx={{ width: { xs: "15%", sm: "7%", md: "7%", lg: "7%" } }}>
             <IconButton onClick={() => setOpen(true)} sx={{alignSelf:'flex-end'}} disableRipple>
               <MenuIcon
                 size="large"
@@ -81,54 +81,60 @@ import { Link } from "react-router-dom";
             </p>
           </Box>
           <TableContainer
-            sx={{ maxWidth: "850px", paddingBottom: "40px", paddingTop: "20px" }}
+          sx={{ maxWidth: "850px", paddingBottom: "40px", paddingTop: "20px" }}
+        >
+          <Table
+            sx={{
+              [`& .${tableCellClasses.root}`]: {
+                borderBottom: "none",
+              },
+              borderCollapse: "separate",
+              borderSpacing: "0px 10px",
+            }}
           >
-            <Table
-              sx={{
-                [`& .${tableCellClasses.root}`]: {
-                  borderBottom: "none",
-                },
-                borderCollapse: "separate",
-                borderSpacing: "0px 10px",
-              }}
-            >
-              {datas.map((data, index) => {
-                return (
-                  <TableRow
-                    className="cellColor"
+            {datas.map((data, index) => {
+              return (
+                <TableRow
+                  className="cellColor"
+                  style={{
+                    // backgroundColor: "#2FAFD4",
+                    overflow: "hidden",
+                    height: "10px",
+                    whiteSpace: "nowrap ",
+                  }}
+                >
+                  {/* <TableCell
+                    key={data.id}
+                    align={data.align}
                     style={{
-                      // backgroundColor: "#2FAFD4",
-                      overflow: "hidden",
-                      height: "10px",
-                      whiteSpace: "nowrap ",
+                      borderCollapse: "separate",
+                      borderSpacing: "10px",
+                      top: 57,
+                      minWidth: data.minWidth,
+                      padding: "12px 12px 12px 12px",
+                      display: "flex",
                     }}
                   >
-                    <TableCell
-                      key={data.id}
-                      align={data.align}
-                      style={{
-                        borderCollapse: "separate",
-                        borderSpacing: "10px",
-                        top: 57,
-                        minWidth: data.minWidth,
-                        padding: "12px 12px 12px 12px",
-                        display: "flex",
-                      }}
-                    >
-                      <Grid container spacing={2}>
-                        <Grid item xs={6}>
-                          <b>{data.api_name}</b>
-                        </Grid>
-                        <Grid item xs={4} sx={{ color: "#2E4E64" }}>
-                          {data.field}
-                        </Grid>
+                    <Grid container spacing={2}>
+                      <Grid item xs={6}>
+                        <b>{data.api_name}</b>
                       </Grid>
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </Table>
-          </TableContainer>
+                      <Grid item xs={4} sx={{ color: "#2E4E64" }}>
+                        {data.field}
+                      </Grid>
+                    </Grid>
+                  </TableCell> */}
+                  <TableCell>
+                    <b>{data.api_name}</b>
+                  </TableCell>
+                  <TableCell>
+                    {data.field}
+                  </TableCell>
+                </TableRow>
+              );
+            })}
+          </Table>
+        </TableContainer>
         </Box>
       </Box>
     );

@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Grid,
   IconButton,
   Table,
@@ -32,25 +33,25 @@ const CompanyProfile = () => {
     <Box
       style={{
         backgroundColor: "#121F28",
-        height: "100vh",
+        height: "100%",
 
         overflowY: "hidden",
       }}
     >
-      <Box sx={{ p: { xs: 1, sm: 8, md: 12, lg: 12 } }}>
+      <Box sx={{ p: { xs: 2, sm: 8, md: 12, lg: 12 } }}>
         <Box style={{ display: "flex", paddingBottom: "30px" }}>
-          <Box sx={{ width: { xs: "75%", sm: "93%", md: "93%", lg: "93%" } }}>
-          <Link to={'/'}>
+          <Box sx={{ width: { xs: "85%", sm: "93%", md: "93%", lg: "93%" } }}>
+            <Link to={"/"}>
               <img
                 src={
                   "https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
                 }
                 alt="pic"
-                style={{ width: "280px", height: "70px", paddingTop: "20px" }}
+                style={{ width: 300, paddingTop: "20px" }}
               />
-              </Link>
+            </Link>
           </Box>
-          <Box style={{ width: { xs: "25%", sm: "7%", md: "7%", lg: "7%" } }}>
+          <Box style={{ width: { xs: "15%", sm: "7%", md: "7%", lg: "7%" } }}>
             <IconButton
               onClick={() => setOpen(true)}
               sx={{ alignSelf: "flex-end" }}
@@ -65,7 +66,7 @@ const CompanyProfile = () => {
                 }}
               />
             </IconButton>
-              <MainMenu open={open} setOpen={setOpen} />
+            <MainMenu open={open} setOpen={setOpen} />
           </Box>
         </Box>
         <h2>
@@ -113,32 +114,31 @@ const CompanyProfile = () => {
                     whiteSpace: "nowrap ",
                   }}
                 >
-                  <TableCell
-                    key={data.id}
-                    align={data.align}
-                    style={{
-                      borderCollapse: "separate",
-                      borderSpacing: "10px",
-                      top: 57,
-                      minWidth: data.minWidth,
-                      padding: "12px 12px 12px 12px",
-                      display: "flex",
-                    }}
-                  >
-                    <Grid container spacing={2}>
-                      <Grid item xs={6}>
-                        <b>{data.api_name}</b>
-                      </Grid>
-                      <Grid item xs={4} sx={{ color: "#2E4E64" }}>
-                        {data.field}
-                      </Grid>
-                    </Grid>
+                  <TableCell>
+                    <b>{data.api_name}</b>
+                  </TableCell>
+                  <TableCell>
+                    {data.field}
                   </TableCell>
                 </TableRow>
               );
             })}
           </Table>
         </TableContainer>
+        <Button
+          variant="contained"
+          sx={{
+            mt: 3,
+            backgroundColor: "#121F28",
+            border: "1px solid #2FAFD4",
+            borderRadius: "10px",
+            '&:hover':{
+              backgroundColor:'transparent'
+            }
+          }}
+        >
+          <i> Edit Details </i>
+        </Button>
       </Box>
     </Box>
   );

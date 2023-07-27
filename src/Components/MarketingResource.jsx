@@ -10,7 +10,8 @@ import pic25 from "../assets/Screenshot_25.png";
 import pic30 from "../assets/Screenshot_30.png";
 import { YouTube } from "@mui/icons-material";
 import ImportantDevicesRoundedIcon from "@mui/icons-material/ImportantDevicesRounded";
-
+import httpagentpage from '../assets/httpagentpage.PNG'
+import counselsessionicon from '../assets/counselsessionicon.PNG'
 const MarketingResource = () => {
   return (
     <Box
@@ -370,7 +371,7 @@ const MarketingResource = () => {
           <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: {sm:4,xs:1} }}>
-                <ImportantDevicesRoundedIcon
+                {/* <ImportantDevicesRoundedIcon
                   fontSize="large"
                   sx={{
                     color: "yellow",
@@ -378,7 +379,16 @@ const MarketingResource = () => {
                     borderRadius: "50%",
                     p: 1,
                   }}
+                /> */}
+                
+                <img
+                  src={counselsessionicon}
+                  alt=""
+                  height={45}
+                  width={40}
+                  style={{ textDecorationColor: "yellow" }}
                 />
+             
               </Box>
               <Box sx={{ width: "35%", mt: {sm:4,xs:1} ,ml:{sm:1,xs:2}}}>
                 <Link href="#" sx={{ color: "yellow" }}>
@@ -415,7 +425,7 @@ const MarketingResource = () => {
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: {sm:4,xs:1}  }}>
                 <img
-                  src="https://cdn-icons-png.flaticon.com/512/428/428971.png"
+                  src={httpagentpage}
                   alt=""
                   height={40}
                   width={50}

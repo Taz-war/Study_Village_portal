@@ -1,4 +1,11 @@
-import { Box, Grid, IconButton, Link, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  IconButton,
+  Link,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
@@ -19,22 +26,36 @@ import pic40 from "../assets/Screenshot_40.png";
 import { useContext } from "react";
 import { StateContex } from "../Context/StateProvider";
 
+import sydney from "../assets/sydney.PNG";
+import urlicon from '../assets/urlicon.PNG'
+
 const HomePage = () => {
   // const [open, setOpen] = useState(false);
   const { open, setOpen } = useContext(StateContex);
+  const matches = useMediaQuery("(max-height:963px)");
   return (
-    <Box sx={{  overflow: "hidden" }}>
+    <Box sx={{ overflow: "hidden", bgcolor: "#121F28" }}>
       <Box
         sx={{
-          backgroundImage: `url(https://whc.unesco.org/uploads/thumbs/site_1485_0002-1200-630-20150610150743.jpg)`,
+          backgroundImage: `url(${sydney})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
         }}
-        height={"50vh"}
+        height={matches === true ? "50svh" : "68svh"}
+        // height={'50vh'}
       >
         <Grid container columns={12}>
-        <Grid item lg={9} md={9} sm={9} xs={9} textAlign={"left"} p={{sm:2.5,xs:0}} pt={{sm:2.5,xs:2}}>
+          <Grid
+            item
+            lg={9}
+            md={9}
+            sm={9}
+            xs={9}
+            textAlign={"left"}
+            p={{ sm: 2.5, xs: 0 }}
+            pt={{ sm: 2.5, xs: 2 }}
+          >
             <img
               src="https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
               alt=""
@@ -87,7 +108,7 @@ const HomePage = () => {
         </Box>
         <Box
           display={"flex"}
-          flexWrap={'wrap'}
+          flexWrap={"wrap"}
           width={"100%"}
           justifyContent={"space-evenly"}
           mt={4}
@@ -100,16 +121,24 @@ const HomePage = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "90%", md: "50%", lg: "20%" },
+              width: { xs: "350px", md: "300px", lg: "272px" },
+
               mb: 5,
               p: 0,
             }}
           >
-            
             <Box width={"100%"} height={"220px"}>
               <img src={pic37} alt="s1" width={"100%"} height={"99%"} />
             </Box>
-            <Typography textAlign={'center'} color={'white'} fontWeight={'50px'} fontSize={'large'} fontStyle={'italic'}><b> APPLY  FOR A STUDENT</b></Typography>
+            <Typography
+              textAlign={"center"}
+              color={"white"}
+              fontWeight={"50px"}
+              fontSize={"large"}
+              fontStyle={"italic"}
+            >
+              <b> APPLY FOR A STUDENT</b>
+            </Typography>
           </Box>
           <Box
             // width={"30%"}
@@ -118,18 +147,24 @@ const HomePage = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "90%", md: "50%", lg: "20%" },
+              width: { xs: "350px", md: "300px", lg: "272px" },
               // height: { xs: "200px", sm: "200px", md: "220px", lg: "260px" },
               mb: 5,
               p: 0,
             }}
           >
-            
             <Box width={"100%"} height={"220px"}>
               <img src={pic38} alt="s1" width={"100%"} height={"99%"} />
             </Box>
-            <Typography textAlign={'center'} color={'white'} fontWeight={'50px'} fontSize={'large'} fontStyle={'italic'}><b> LAUNCH A CAMPAIGN </b></Typography>
-
+            <Typography
+              textAlign={"center"}
+              color={"white"}
+              fontWeight={"50px"}
+              fontSize={"large"}
+              fontStyle={"italic"}
+            >
+              <b> LAUNCH A CAMPAIGN </b>
+            </Typography>
           </Box>
           <Box
             // width={"30%"}
@@ -138,20 +173,26 @@ const HomePage = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "90%", md: "50%", lg: "20%" },
+              width: { xs: "350px", md: "300px", lg: "272px" },
               // height: { xs: "200px", sm: "200px", md: "220px", lg: "260px" },
               mb: 5,
               p: 0,
             }}
           >
-           
             <Box width={"100%"} height={"220px"}>
               <img src={pic39} alt="s1" width={"100%"} height={"99%"} />
             </Box>
-            <Typography textAlign={'center'} color={'white'} fontWeight={'50px'} fontSize={'large'} fontStyle={'italic'}><b> CHECK STUDENT(S) PROGRESS</b></Typography>
-
+            <Typography
+              textAlign={"center"}
+              color={"white"}
+              fontWeight={"50px"}
+              fontSize={"large"}
+              fontStyle={"italic"}
+            >
+              <b> CHECK STUDENT(S) PROGRESS</b>
+            </Typography>
           </Box>
-         
+
           <Box
             // width={"30%"}
             height={"220px"}
@@ -159,24 +200,40 @@ const HomePage = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "90%", md: "50%", lg: "20%" },
+              width: { xs: "350px", md: "300px", lg: "272px" },
               // height: { xs: "200px", sm: "200px", md: "220px", lg: "260px" },
               mb: 5,
               p: 0,
             }}
           >
-            
             <Box width={"100%"} height={"220px"}>
               <img src={pic40} alt="s1" width={"100%"} height={"99%"} />
             </Box>
-            <Typography textAlign={'center'} color={'white'} fontWeight={'30px'} fontSize={'large'} fontStyle={'italic'}><b> ACCESS TRAINING & SALES RESOURCES</b></Typography>
-
+            <Typography
+              textAlign={"center"}
+              color={"white"}
+              fontWeight={"30px"}
+              fontSize={"large"}
+              fontStyle={"italic"}
+            >
+              <b> ACCESS TRAINING & SALES RESOURCES</b>
+            </Typography>
           </Box>
           {/* </Box> */}
         </Box>
       </Box>
-      <Box  sx={{ backgroundColor: "yellow", display: "flex" ,flexWrap:'wrap'}} pb={3}>
-        <Box  pt={3} display={"flex"} flexWrap={'wrap'} sx={{width:{xs:'100%',sm:'100%',md:'50%',lg:'50%'}}} textAlign={{xs:'center',md:'left'}} justifyContent={{xs:'center'}}>
+      <Box
+        sx={{ backgroundColor: "yellow", display: "flex", flexWrap: "wrap" }}
+        pb={3}
+      >
+        <Box
+          pt={3}
+          display={"flex"}
+          flexWrap={"wrap"}
+          sx={{ width: { xs: "100%", sm: "100%", md: "50%", lg: "50%" } }}
+          textAlign={{ xs: "center", md: "left" }}
+          justifyContent={{ xs: "center" }}
+        >
           <Box
             borderRadius={"50%"}
             sx={{ outline: "1px solid black" }}
@@ -192,11 +249,19 @@ const HomePage = () => {
               sx={{ margin: "0 auto" }}
             />
           </Box>
-          <Typography textAlign={{md:"left",xs:'center'}} ml={3} mt={1.8} fontSize={"large"}>
+          <Typography
+            textAlign={{ md: "left", xs: "center" }}
+            ml={3}
+            mt={1.8}
+            fontSize={"large"}
+          >
             <b>(+613) 703 603 47</b>
           </Typography>
         </Box>
-        <Box  textAlign={{xs:'center',md:'center'}}  sx={{width:{xs:'100%',sm:'100%',md:'50%',lg:'50%'}}}>
+        <Box
+          textAlign={{ xs: "center", md: "center" }}
+          sx={{ width: { xs: "100%", sm: "100%", md: "50%", lg: "50%" } }}
+        >
           <Link>
             <img
               src="https://icons.veryicon.com/png/o/miscellaneous/very-thin-linear-icon/linkedin-103.png"

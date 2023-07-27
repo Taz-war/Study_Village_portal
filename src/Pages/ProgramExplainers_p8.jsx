@@ -13,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MainMenu from "../Components/MainMenu";
 import { useState } from "react";
 import DownloadForOfflineRoundedIcon from "@mui/icons-material/DownloadForOfflineRounded";
+import PlayCircleFilledWhiteOutlinedIcon from "@mui/icons-material/PlayCircleFilledWhiteOutlined";
 import pic1 from "../assets/Screenshot_1.png";
 import pic2 from "../assets/Screenshot_2.png";
 import pic3 from "../assets/Screenshot_3.png";
@@ -53,14 +54,14 @@ import pic34 from "../assets/Screenshot_34.png";
 import pic35 from "../assets/Screenshot_35.png";
 import pic36 from "../assets/Screenshot_36.png";
 
-import { SignalCellularAlt} from "@mui/icons-material";
+import { SignalCellularAlt } from "@mui/icons-material";
 import { StateContex } from "../Context/StateProvider";
 import { Link } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "black" ? "black" : "black",
   ...theme.typography.body2,
-  padding: theme.spacing(1),
+  padding: theme.spacing(2),
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
@@ -73,12 +74,12 @@ const ProgramExplainers_p8 = () => {
       <Box sx={{ backgroundColor: "#121F28" }} height={"35vh"}>
         <Grid container columns={12}>
           <Grid item lg={9} md={9} sm={9} xs={9} textAlign={"left"} p={2.5}>
-            <Link to={'/'}>
-            <img
-              src="https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
-              alt=""
-              width={300}
-            />
+            <Link to={"/"}>
+              <img
+                src="https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
+                alt=""
+                width={300}
+              />
             </Link>
           </Grid>
           <Grid
@@ -107,12 +108,7 @@ const ProgramExplainers_p8 = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box
-        width={"100%"}
-        // height={"65vh"}
-        sx={{ backgroundColor: "#121F28" }}
-        m={0}
-      >
+      <Box width={"100%"} sx={{ backgroundColor: "#121F28" }} m={0}>
         <h2
           style={{
             color: "white",
@@ -137,7 +133,7 @@ const ProgramExplainers_p8 = () => {
           mt={3}
           pt={1}
         >
-          <Typography fontStyle={"italic"}>
+          <Typography fontStyle={"italic"} pl={1}>
             <b>
               EXPLAINERS VIDIEOS
               <span style={{ color: "#121F28" }}> STUDENT VIEW</span>
@@ -154,144 +150,11 @@ const ProgramExplainers_p8 = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
               mb: 15,
+              m:8,
               p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic25} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic26} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic27} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic28} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic29} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
+              mt:0
             }}
           >
             <Box
@@ -305,8 +168,249 @@ const ProgramExplainers_p8 = () => {
                 sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
               />
             </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic30} alt="s1" width={"100%"} height={"104%"} />
+            <Box width={"100%"} height={"260px"} position={"relative"}>
+              <img
+                src={pic25}
+                alt="s1"
+               width={"100%"}
+                height={"104%"}
+                style={{ display: "block" }}
+              />
+              <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={"relative"}>
+              <img src={pic26} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+              <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic27} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+              <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic28} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+              <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic29} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+              <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic30} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+              <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
             </Box>
           </Box>
         </Box>
@@ -325,7 +429,7 @@ const ProgramExplainers_p8 = () => {
           mt={3}
           pt={1}
         >
-          <Typography fontStyle={"italic"}>
+          <Typography fontStyle={"italic"} pl={1}>
             <b>
               EXPLAINERS VIDIEOS
               <span style={{ color: "#121F28" }}> STUDYVILLAGE PARTNERS</span>
@@ -342,9 +446,11 @@ const ProgramExplainers_p8 = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
               mb: 15,
               p: 0,
+              m:10,
+              mt:0
             }}
           >
             <Box
@@ -358,8 +464,23 @@ const ProgramExplainers_p8 = () => {
                 sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
               />
             </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic31} alt="s1" width={"100%"} height={"104%"} />
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic31} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+               <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
             </Box>
           </Box>
           <Box
@@ -369,117 +490,11 @@ const ProgramExplainers_p8 = () => {
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
               mb: 15,
               p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic32} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic33} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic34} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
-            }}
-          >
-            <Box
-              width={"100%"}
-              borderBottom={"1px solid yellow"}
-              height={"40px"}
-              textAlign={"left"}
-            >
-              <DownloadForOfflineRoundedIcon
-                fontSize="large"
-                sx={{ color: "yellow", marginLeft: 2 }}
-              />
-            </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic35} alt="s1" width={"100%"} height={"104%"} />
-            </Box>
-          </Box>
-          <Box
-            // width={"30%"}
-            height={"315px"}
-            sx={{
-              backgroundColor: "black",
-              color: "white",
-              border: "1px solid yellow",
-              width: { xs: "80%", sm: "80%", md: "30%" },
-              mb: 15,
-              p: 0,
+              m:10,
+              mt:0
             }}
           >
             <Box
@@ -493,8 +508,199 @@ const ProgramExplainers_p8 = () => {
                 sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
               />
             </Box>
-            <Box width={"100%"} height={"260px"}>
-              <img src={pic36} alt="s1" width={"100%"} height={"104%"} />
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic32} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+               <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic33} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+               <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic34} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+               <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic35} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+               <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+          <Box
+            // width={"30%"}
+            height={"315px"}
+            sx={{
+              backgroundColor: "black",
+              color: "white",
+              border: "1px solid yellow",
+              width: { xs: "80%", sm: "500px", md: "472px",lg:'472px' },
+              mb: 15,
+              p: 0,
+              m:10,
+              mt:0
+            }}
+          >
+            <Box
+              width={"100%"}
+              borderBottom={"1px solid yellow"}
+              height={"40px"}
+              textAlign={"left"}
+            >
+              <DownloadForOfflineRoundedIcon
+                fontSize="large"
+                sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
+              />
+            </Box>
+            <Box width={"100%"} height={"260px"} position={'relative'}>
+              <img src={pic36} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }}/>
+               <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
             </Box>
           </Box>
         </Box>
@@ -533,7 +739,7 @@ const ProgramExplainers_p8 = () => {
           mt={3}
           pt={1}
         >
-          <Typography fontStyle={"italic"}>
+          <Typography fontStyle={"italic"} pl={1}>
             <b>
               EXPLAINERS VIDIEOS & OUTLINE SAMPLES
               <span style={{ color: "#121F28" }}> AWARD PROGRAMS</span>
@@ -543,9 +749,9 @@ const ProgramExplainers_p8 = () => {
         <br />
         <br />
 
-        <Box>
-          <Grid container spacing={2} columns={16}>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+        <Box pl={10}>
+          <Grid container  columns={16} columnSpacing={2} columnGap={1}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={4} >
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -562,19 +768,35 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic1} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic1} alt="s1" width={"100%"} height={"104%"}  style={{ display: "block" }}/>
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
-            <Grid item lg={2} md={2} xs={4} mb={15} ml={2}>
+            <Grid item lg={2} md={2} xs={4} mb={15} ml={2} spacing={2} justifyContent={'space-evenly'}>
               <Item
                 sx={{
                   border: "1px solid yellow",
                   color: "white",
+                  width:{md:'90%',xs:'100%'},
                   height: "315px",
                   p: 0,
                 }}
@@ -587,7 +809,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -595,7 +817,7 @@ const ProgramExplainers_p8 = () => {
                 </Box>
               </Item>
             </Grid>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -612,11 +834,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic3} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic3} alt="s1" width={"100%"} height={"104%"}  style={{ display: "block" }}/>
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -637,7 +874,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -646,7 +883,7 @@ const ProgramExplainers_p8 = () => {
               </Item>
             </Grid>
 
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -663,11 +900,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic5} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic5} alt="s1" width={"100%"} height={"104%"}  style={{ display: "block" }}/>
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -677,6 +929,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -688,7 +941,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -696,7 +949,7 @@ const ProgramExplainers_p8 = () => {
                 </Box>
               </Item>
             </Grid>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -713,11 +966,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic7} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic7} alt="s1" width={"100%"} height={"104%"}  style={{ display: "block" }}/>
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -727,6 +995,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -738,7 +1007,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -747,7 +1016,7 @@ const ProgramExplainers_p8 = () => {
               </Item>
             </Grid>
 
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -764,11 +1033,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic9} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic9} alt="s1" width={"100%"} height={"104%"}  style={{ display: "block" }}/>
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -778,6 +1062,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -789,7 +1074,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -797,7 +1082,7 @@ const ProgramExplainers_p8 = () => {
                 </Box>
               </Item>
             </Grid>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -814,11 +1099,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic11} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic11} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -828,6 +1128,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -839,7 +1140,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -848,7 +1149,7 @@ const ProgramExplainers_p8 = () => {
               </Item>
             </Grid>
 
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -865,11 +1166,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic13} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic13} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -879,6 +1195,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -890,7 +1207,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -936,7 +1253,7 @@ const ProgramExplainers_p8 = () => {
           mt={3}
           pt={1}
         >
-          <Typography fontStyle={"italic"}>
+          <Typography fontStyle={"italic"} pl={1} >
             <b>
               EXPLAINERS VIDIEOS & OUTLINE SAMPLES
               <span style={{ color: "#121F28" }}> ELICOS PROGRAMS</span>
@@ -945,9 +1262,9 @@ const ProgramExplainers_p8 = () => {
         </Box>
         <br />
         <br />
-        <Box>
-          <Grid container spacing={2} columns={16}>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+        <Box pl={10}>
+          <Grid container spacing={2} columns={16} columnSpacing={2} columnGap={1}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -964,11 +1281,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic15} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic15} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -978,6 +1310,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -989,7 +1322,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -997,7 +1330,7 @@ const ProgramExplainers_p8 = () => {
                 </Box>
               </Item>
             </Grid>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -1014,11 +1347,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic17} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic17} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -1028,6 +1376,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -1039,7 +1388,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -1048,7 +1397,7 @@ const ProgramExplainers_p8 = () => {
               </Item>
             </Grid>
 
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -1065,11 +1414,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic19} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic19} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -1079,6 +1443,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -1090,7 +1455,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -1098,7 +1463,7 @@ const ProgramExplainers_p8 = () => {
                 </Box>
               </Item>
             </Grid>
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -1115,11 +1480,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic21} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic21} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -1129,6 +1509,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -1140,7 +1521,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>
@@ -1149,7 +1530,7 @@ const ProgramExplainers_p8 = () => {
               </Item>
             </Grid>
 
-            <Grid item lg={5} md={5} xs={8} mb={15} ml={3.5}>
+            <Grid item lg={4} md={5} xs={8} mb={15} ml={3.5}>
               <Item
                 sx={{
                   border: "1px solid yellow",
@@ -1166,11 +1547,26 @@ const ProgramExplainers_p8 = () => {
                 >
                   <DownloadForOfflineRoundedIcon
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
-                <Box width={"100%"} height={"260px"}>
-                  <img src={pic23} alt="s1" width={"100%"} height={"104%"} />
+                <Box width={"100%"} height={"260px"} position={'relative'}>
+                  <img src={pic23} alt="s1" width={"100%"} height={"104%"} style={{ display: "block" }} />
+                  <Link>
+                <PlayCircleFilledWhiteOutlinedIcon
+                  sx={{
+                    position: "absolute",
+                    bottom: "25%",
+                    left: "40%",
+                    color: "white",
+                    fontSize: "100px",
+                    '&:hover':{
+                      color:'red',
+                      
+                    }
+                  }}
+                />
+              </Link>
                 </Box>
               </Item>
             </Grid>
@@ -1180,6 +1576,7 @@ const ProgramExplainers_p8 = () => {
                   border: "1px solid yellow",
                   color: "white",
                   height: "315px",
+                  width:{md:'90%',xs:'100%'},
                   p: 0,
                 }}
               >
@@ -1191,7 +1588,7 @@ const ProgramExplainers_p8 = () => {
                 >
                   <SignalCellularAlt
                     fontSize="large"
-                    sx={{ color: "yellow", marginLeft: 2 }}
+                    sx={{ color: "yellow", marginLeft: 2, mt: 0.4 }}
                   />
                 </Box>
                 <Box width={"100%"} height={"260px"}>

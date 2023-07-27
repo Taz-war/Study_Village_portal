@@ -25,7 +25,7 @@ import { Link } from "react-router-dom";
 const StudyVillageResources = () => {
   const { open, setOpen,marketingResource,setMarketingResource,learningResource,setLearningResource,destinationPrep,setDestinationPrep } = useContext(StateContex);
   return (
-    <Box minWidth={"420px"} width={'100%'} overflow={'hidden'} sx={{backgroundColor:'#121F28'}}>
+    <Box minWidth={"420px"} width={'100%'}  overflow={'hidden'} sx={{backgroundColor:'#121F28'}}>
       <Box sx={{ backgroundColor: "#121F28" }} height={"30vh"}>
         <Grid container columns={12}>
           <Grid item lg={9} md={9} sm={9} xs={9} textAlign={"left"} p={2.5}>
