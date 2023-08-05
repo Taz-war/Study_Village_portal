@@ -7,6 +7,7 @@ import {
   TableCell,
   TableContainer,
   TableRow,
+  TextField,
   tableCellClasses,
 } from "@mui/material";
 import React from "react";
@@ -17,7 +18,9 @@ import { useState } from "react";
 import { StateContex } from "../Context/StateProvider";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-const datas = [
+import MABECSlogo from '../assets/MABECSlogo.PNG'
+
+let datas = [
   { api_name: "Company Principal", field: "James Anderson" },
   { api_name: "Referral ID", field: 9238627185621753 },
   { api_name: "Key Contact email address", field: "svagent111@gmail.com" },
@@ -29,6 +32,17 @@ const datas = [
 const keys = Object.keys(datas);
 const CompanyProfile = () => {
   const { open, setOpen } = useContext(StateContex);
+  const [editDetails, setEditDetails] = useState(false);
+  const [inputField, setInputFeild] = useState(datas);
+
+  const handleUpdate = (e, i) => {
+
+    const tempData = datas;
+
+    tempData[i].field = e;
+    setInputFeild(tempData);
+  };
+
   return (
     <Box
       style={{
@@ -38,27 +52,49 @@ const CompanyProfile = () => {
         overflowY: "hidden",
       }}
     >
-      <Box sx={{ p: { xs: 2, sm: 8, md: 12, lg: 12 } }}>
-        <Box style={{ display: "flex", paddingBottom: "30px" }}>
-          <Box sx={{ width: { xs: "85%", sm: "93%", md: "93%", lg: "93%" } }}>
+      <Box sx={{ backgroundColor: "#121F28" }} height={"20vh"}>
+        <Grid container columns={12}>
+          <Grid
+            item
+            lg={9}
+            md={9}
+            sm={9}
+            xs={8}
+            textAlign={"left"}
+            p={5}
+            pt={{ lg: 5, md: 3, xs: 1 }}
+          >
             <Link to={"/"}>
               <img
-                src={
-                  "https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
-                }
-                alt="pic"
-                style={{ width: 300, paddingTop: "20px" }}
+                src="https://i.postimg.cc/tgNXTJck/svLogo.png"
+                alt=""
+                width={200}
               />
             </Link>
-          </Box>
-          <Box style={{ width: { xs: "15%", sm: "7%", md: "7%", lg: "7%" } }}>
+          </Grid>
+          <Grid item  xs={1}  pt={6}  mt={1} textAlign={'center'}>
+            <Box maxWidth={'100px'} maxHeight={'95px'} width={'100%'} height={{md:'auto',xs:'auto'}} textAlign={'center'}>
+
+            <img src={MABECSlogo} alt="" width={'100%' } height={'100%'}/>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            lg={1}
+            md={1}
+            sm={1}
+            xs={1}
+            textAlign={"center"}
+            p={5}
+            sx={{ p: { xs: 2, sm: 3, md: 4, lg: 5 } }}
+          >
             <IconButton
               onClick={() => setOpen(true)}
-              sx={{ alignSelf: "flex-end" }}
+              //   sx={{ alignSelf: "flex-end" }}
               disableRipple
             >
               <MenuIcon
-                size="large"
+               
                 sx={{
                   color: "yellow",
                   height: "100px",
@@ -67,8 +103,11 @@ const CompanyProfile = () => {
               />
             </IconButton>
             <MainMenu open={open} setOpen={setOpen} />
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box sx={{ p: { xs: 2, sm: 8, md: 8 }, pl: { md: 5, xs: 2 } }}>
+        
         <h2>
           <i style={{ color: "white" }}>Your Company Profile</i>
         </h2>
@@ -103,41 +142,60 @@ const CompanyProfile = () => {
               borderSpacing: "0px 10px",
             }}
           >
-            {datas.map((data, index) => {
-              return (
-                <TableRow
-                  className="cellColor"
-                  style={{
-                    // backgroundColor: "#2FAFD4",
-                    overflow: "hidden",
-                    height: "10px",
-                    whiteSpace: "nowrap ",
-                  }}
-                >
-                  <TableCell>
-                    <b>{data.api_name}</b>
-                  </TableCell>
-                  <TableCell>
-                    {data.field}
-                  </TableCell>
-                </TableRow>
-              );
-            })}
+            {inputField.length > 0 &&
+              inputField.map((data, index) => {
+                return (
+                  <TableRow
+                    className="cellColor"
+                    style={{
+                      overflow: "hidden",
+                      height: "10px",
+                      whiteSpace: "nowrap ",
+                    }}
+                  >
+                    <TableCell>
+                      <b>{data.api_name}</b>
+                    </TableCell>
+                    <TableCell>
+                      {!editDetails && data.field}
+                      {editDetails && (
+                        <TextField
+                          defaultValue={data.field}
+                          onChange={(e) => {
+                            handleUpdate(e.target.value, index);
+                          }}
+                          sx={{
+                            backgroundColor: "white",
+                            m: 0,
+                            p: 0,
+                            "& .MuiOutlinedInput-root": { height: "30px" },
+                          }}
+                        />
+                      )}
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
           </Table>
         </TableContainer>
         <Button
           variant="contained"
+          onClick={() => {
+            editDetails === false
+              ? setEditDetails(true)
+              : setEditDetails(false);
+          }}
           sx={{
             mt: 3,
             backgroundColor: "#121F28",
             border: "1px solid #2FAFD4",
             borderRadius: "10px",
-            '&:hover':{
-              backgroundColor:'transparent'
-            }
+            "&:hover": {
+              backgroundColor: "transparent",
+            },
           }}
         >
-          <i> Edit Details </i>
+          <i>{editDetails === false ? "Edit Details" : "Submit details"}</i>
         </Button>
       </Box>
     </Box>

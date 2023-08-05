@@ -12,6 +12,8 @@ import Counsellors from "../Pages/Counsellors";
 import PartnershipManager from "../Pages/PartnershipManager";
 import StudyVillageResources from '../Pages/StudyVillageResources';
 
+import Counsellor_training from "../Pages/Counsellor_training";
+
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +25,8 @@ export const router = createBrowserRouter(
       <Route path="/partnership_manager" element={<PartnershipManager />} />
       <Route path="/program_explainers" element={<ProgramExplainers_p8 />} />
       <Route path="/study_village_resources" element={<StudyVillageResources />} />
+      <Route path="/counsellor_training" element={<Counsellor_training />} />
+
 
     </>
   )

@@ -2,8 +2,16 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "@mui/material";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
+import { useState } from "react";
+import Sv_modules from "../Learning-resource/Sv_modules";
+import SvPrograms from "../Learning-resource/SvPrograms";
+import overviewpc from '../assets/overviewpc.PNG'
 const LearningResource = () => {
+  const [svModules,setSvModules]= useState(true)
+  const [svPrograms,setSvPrograms]=useState(false)
   return (
+    <>
+    <Box display={"flex"} flexWrap={'wrap'}>
     <Box
       sx={{
         backgroundColor: "#121F28",
@@ -20,14 +28,21 @@ const LearningResource = () => {
         <Grid item lg={6} md={6} sm={12} xs={12} maxWidth={"521px"} width={'100%'}>
             <Box
               // width={{lg:"90%",md:'90%',xs:'98%'}}
+              onClick={()=>{{setSvModules(true);setSvPrograms(false)}}}
               sx={{
-                border: "1px solid white",
                 width:'cover',
                 p: 1,
                 pl: 2,
                 display: "flex",
                 height: {lg:"55px",md:'72px',sm:'65px',xs:'70px'},
                 cursor: "pointer",
+                border: `${svModules===false?"1px solid white":"1px solid skyblue"}`,
+                '& .addHover':{
+                  color: `${svModules===false?"white":"skyblue"}`,
+                },
+                '& .addIconHover':{
+                  border:`${svModules===false?"1px solid white":"1px solid skyblue"}`,
+                },
                 "&:hover": {
                   border: "1px solid skyblue",
                   "& .addHover": {
@@ -59,17 +74,24 @@ const LearningResource = () => {
                   
                 }}
               >
-                <b>StudyVillage Campaign Resources</b>
+                <b>StudyVillage Modules-</b>
                 <br />
-                Assisting you convert students to SV students
+                together they make a Happy,Healthy & Wise program
               </Link>
             </Box>
           </Grid>
         <Grid item lg={6} md={6} sm={12} xs={12} maxWidth={"521px"} width={'100%'}>
             <Box
             //  width={{lg:"90%",md:'90%',xs:'98%'}}
+            onClick={()=>{{setSvModules(false);setSvPrograms(true)}}}
               sx={{
-                border: "1px solid white",
+                border: `${svPrograms===false?"1px solid white":"1px solid skyblue"}`,
+                '& .addHover':{
+                  color: `${svPrograms===false?"white":"skyblue"}`,
+                },
+                '& .addIconHover':{
+                  border:`${svPrograms===false?"1px solid white":"1px solid skyblue"}`,
+                },
                 p: 1,
                 pl: 2,
                 display: "flex",
@@ -105,123 +127,39 @@ const LearningResource = () => {
                  
                 }}
               >
-                <b>Let us do the work for you</b>
+                <b>StudyVillage Program-</b>
                 <br />
-                Enter individual or bulk lead StudyVillage will Convert
-              </Link>
-            </Box>
-          </Grid>
-         
-
-          <Grid item lg={7} md={7} sm={12} xs={12} p={{lg:2,md:2,xs:0}} display={"flex"} textAlign={{lg:'left',md:'left',sm:'justify',xs:'justify'}}>
-            <Box width={{xs:'100%'}} p={0}>
-            <Typography fontSize={"small"} width={'100%'} >
-              StudyVillage is an amazing way to make serious commission on top
-              of your university commission.
-              <br />
-              <br /> (And do right by your students!). But all agents are busy,
-              following up applications, bringing students in the door and
-              keeping across complex university and visa requirements.
-              <br />
-              <br /> But there's a simple to work with us - let us do the work
-              for you. You enter student and parent details into our form and we
-              commence a non-intrusive campaign designed to inform prospects
-              about StudyVillage and position your agency as a concerned
-              full-service agency provider of choice. When recommend you check
-              the box to see ALL correspondence that comes to and from your
-              student. When we convert, the student into a paying StudyVillage
-              program, we immediately pay you commission.
-              <br />
-              <br /> The campaign itself is not sales heavy - it's centred on
-              providing a FREE resource that prepares them for living, studying
-              and working in their destination country. We call it
-              DestinationPREP. Our partners and agents (and for that matter,
-              parents) are free to undertake the course itself.
-              <br />
-              <br />
-              <span style={{ color: "yellow" }}>
-                An EVEN EASIER way to work this (i.e. not even requiring you to
-                enter their details is simply send them on our Destination Prep
-                email, CC us in (at hr@studyvillage.org), and we’ll follow up,
-                check in on progress, congratulate them on when they finish.
-              </span>
-            </Typography>
-            </Box>
-          </Grid>
-          <Grid item lg={5} md={5} sm={12} xs={12}  p={2} pl={{md:2,xs:3}} pt={4} pr={{md:6,sm:4,xs:1}} textAlign={{md:'right',xs:'center'}}>
-            <Button
-              variant="contained"
-              sx={{
-                borderRadius: "10px",
-                border: "1px solid white",
-                height: 45,
-                backgroundColor: "#FF914D",
-                color: "white",
-                width: {lg:319,xs:'100%'},
-                mt:2,
-                // ml:{md:'0 auto',xs:'0 auto'}
-              }}
-            >
-              SUBMIT AN INDIVIDUAL STUDENT LEAD
-            </Button>
-            <br />
-            <br />
-            <Button
-              variant="contained"
-              sx={{
-                borderRadius: "10px",
-                border: "1px solid white",
-                height: 45,
-                p:1,
-                backgroundColor: "#FF66C4",
-                width: {lg:319,xs:'100%'},
-                color: "white",
-              }}
-            >
-              SUBMIT BULK LEADS-CURRENT STUDENTS
-            </Button>
-            <br />
-            <br />
-            <Button
-              variant="contained"
-              sx={{
-                borderRadius: "10px",
-                border: "1px solid white",
-                height: 45,
-                backgroundColor: "#38B6FF",
-                color: "white",
-                width: {lg:319,xs:'100%'},
-                fontSize: "small",
-                p: 0.2,
-              }}
-            >
-              SUBMIT BULK LEADS-LOST CONTACT STUDENTS
-            </Button>
-            <br />
-            <br />
-            <br />
-            <Box
-              display={"flex"}
-              width={{lg:"80%",xs:'100%'}}
-              ml={{lg:6.5,xs:0}}
-              mr={{lg:0,xs:0}}
-              textAlign={"left"}
-            >
-              <img
-                src="https://cdn.icon-icons.com/icons2/3053/PNG/512/microsoft_excel_alt_macos_bigsur_icon_189978.png"
-                alt=""
-                height={60}
-                width={60}
-                // style={{ marginLeft: 15 }}
-              />
-              <Link href="#" sx={{ color: "yellow" }}>
-                DownLoad simple StudyVillage <br /> upload templete
+                module combinations to match study duration
               </Link>
             </Box>
           </Grid>
         </Grid>
-     
+
     </Box>
+    <Box display={"flex"} maxWidth={'350px'} width={'100%'} mt={4} ml={5}>
+      <Box  width={'50%'}>
+        <Typography variant="h5" color={'white'} > <b> OVERVIEW</b></Typography>
+        <Box display={"flex"}>
+
+        <img
+              src="https://www.iconpacks.net/icons/2/free-pdf-upload-icon-3389-thumb.png"
+              alt=""
+              height={"auto"}
+              width={50}
+            />
+            <Link href="#" fontSize={{lg:"large",md:'medium'}} sx={{ color: "yellow", ml: 2 }}>
+              Download <br /> QuickGuide
+            </Link>
+        </Box>
+      </Box>
+      <Box width={'50%'}>
+        <img src={overviewpc} alt="" height={'auto'} width={'100%'}/>
+      </Box>
+    </Box>
+    </Box>
+    {svModules && <Sv_modules />}
+    {svPrograms && <SvPrograms />}
+    </>
   );
 };
 

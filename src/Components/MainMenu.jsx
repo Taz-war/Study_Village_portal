@@ -47,14 +47,14 @@ const MainMenu = ({ open, setOpen }) => {
               href="google.com"
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
-              Start a campaign
+              Start a SV campaign
             </Link>
             <br></br>
             <Link
               href="google.com"
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
-              Submit Student leads
+              Submit Student lead
             </Link>
             <br></br>
             <Link
@@ -84,23 +84,15 @@ const MainMenu = ({ open, setOpen }) => {
           <Grid item lg={3} xs={12} sm={12} md={6} pl={2}>
             <h3 style={{ fontStyle: "italic" }}>RESOURCES</h3>
             <Link
-              to={"/company_profile"}
+              to={"/study_village_resources"}
               onClick={()=>setOpen(false)}
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
-              Your company profile
+              Marketing & learning resources
             </Link>
             <br></br>
             <Link
-              to={"/your_students"}
-              onClick={()=>setOpen(false)}
-              style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
-            >
-              Your students
-            </Link>
-            <br></br>
-            <Link
-              to={"/counsellors"}
+              to={"/counsellor_training"}
               onClick={()=>setOpen(false)}
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
@@ -108,28 +100,38 @@ const MainMenu = ({ open, setOpen }) => {
             </Link>
             <br></br>
             <Link
-              to={"/program_explainers"}
+              to={"/your_students"}
               onClick={()=>setOpen(false)}
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
-              Program Explainers{" "}
+              Your SV students
             </Link>
             <br></br>
+          
             <Link
-              to={"/study_village_resources"}
+              to={"/counsellors"}
               onClick={()=>setOpen(false)}
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
-              Marketing resources
+              Your SV counsellors
             </Link>
             <br></br>
             <Link
+              to={"/company_profile"}
+              onClick={()=>setOpen(false)}
+              style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
+            >
+              Your company profile
+            </Link>
+            <br></br>
+            
+            {/* <Link
               to={"/partnership_manager"}
               onClick={()=>setOpen(false)}
               style={{ textDecoration: "none", color: "grey", lineHeight: 1.8 }}
             >
               Easy Guide to making money with StudyVillage
-            </Link>
+            </Link> */}
             <br></br>
           </Grid>
         </Grid>

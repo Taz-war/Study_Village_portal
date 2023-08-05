@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "@mui/material";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import pic41 from '../assets/Screenshot_41.png'
+import wevemissedyou from '../assets/wevemissedyou.PNG'
 
 const DestinationPrep = () => {
   return (
@@ -19,7 +20,7 @@ const DestinationPrep = () => {
     >
       
         <Grid container columns={12} columnSpacing={1} rowSpacing={1} p={1} pr={{xs:3,md:3,sm:3}}>
-        <Grid item lg={6} md={6} sm={12} xs={12} maxWidth={"521px"} width={'100%'}>
+        {/* <Grid item lg={6} md={6} sm={12} xs={12} maxWidth={"521px"} width={'100%'}>
             <Box
               // width={{lg:"90%",md:'90%',xs:'98%'}}
               sx={{
@@ -112,7 +113,7 @@ const DestinationPrep = () => {
                 Enter individual or bulk lead StudyVillage will Convert
               </Link>
             </Box>
-          </Grid>
+          </Grid> */}
 
 
           <Grid item lg={6} md={6} sm={12} xs={12} p={{sm:2,xs:0}} maxWidth={"529px"} width={'100%'} textAlign={'center'}>
@@ -161,9 +162,9 @@ const DestinationPrep = () => {
              <b> TRY DESTINATIONPREP FOR YOURSELF</b>
             </Button>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12}  maxWidth={"529px"} width={'100%'} textAlign={'center'} >
-              <Box p={1} border={'1px solid yellow'} width={'69%'} ml={{lg:17,md:14,xs:6.5}} mr={0} mt={2}>
-                <img src={pic41} alt="" width={'100%'}/>
+          <Grid item lg={6} md={6} sm={12} xs={12}  maxWidth={"529px"} width={'100%'} textAlign={'center'} justifyContent={'space-around'}>
+              <Box p={1} pr={{md:1,xs:2}} width={{xs:'70%'}} mt={2} margin={'0px auto'} justifyContent={'space-around'} >
+                <img src={wevemissedyou} alt="" width={'100%'}/>
               </Box>
           </Grid>
         </Grid>

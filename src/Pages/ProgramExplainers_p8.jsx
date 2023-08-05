@@ -72,13 +72,13 @@ const ProgramExplainers_p8 = () => {
   return (
     <Box height={"100%"} minWidth={"420px"} overflow={"hidden"}>
       <Box sx={{ backgroundColor: "#121F28" }} height={"35vh"}>
-        <Grid container columns={12}>
-          <Grid item lg={9} md={9} sm={9} xs={9} textAlign={"left"} p={2.5}>
+      <Grid container columns={12}>
+          <Grid item lg={9} md={9} sm={9} xs={9} textAlign={"left"} p={5} pt={{lg:5,md:3,xs:1}}>
             <Link to={"/"}>
               <img
-                src="https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
+                src="https://i.postimg.cc/tgNXTJck/svLogo.png"
                 alt=""
-                width={300}
+                width={200}
               />
             </Link>
           </Grid>
@@ -89,19 +89,26 @@ const ProgramExplainers_p8 = () => {
             sm={3}
             xs={3}
             textAlign={"right"}
-            sx={{ pt: { xs: 2, sm: 1.8, md: 1, lg: 0.5 } }}
+            p={5}
+            sx={{ p: { xs: 2, sm: 3, md: 4, lg: 5 }}}
           >
             <IconButton
               onClick={() => setOpen(true)}
-              sx={{ alignSelf: "flex-end" }}
+            //   sx={{ alignSelf: "flex-end" }}
               disableRipple
             >
               <MenuIcon
+                // sx={{
+                // //   width: { lg: 180, md: 100, sm: 80, xs: 50 },
+                // width:500,
+                //   color: "yellow",
+                //   height: { lg: 70, md: 60, sm: 50, xs: 40 },
+                // }}
                 sx={{
-                  width: { lg: 180, md: 100, sm: 80, xs: 50 },
-                  color: "yellow",
-                  height: { lg: 70, md: 60, sm: 50, xs: 40 },
-                }}
+                    color: "yellow",
+                    height: "100px",
+                    width: { xs: "55px", sm: "70px", md: "100px" },
+                  }}
               />
             </IconButton>
             <MainMenu open={open} setOpen={setOpen} />

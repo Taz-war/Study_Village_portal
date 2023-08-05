@@ -29,6 +29,8 @@ import { StateContex } from "../Context/StateProvider";
 import sydney from "../assets/sydney.PNG";
 import urlicon from '../assets/urlicon.PNG'
 
+import MABECSlogo from '../assets/MABECSlogo.PNG'
+
 const HomePage = () => {
   // const [open, setOpen] = useState(false);
   const { open, setOpen } = useContext(StateContex);
@@ -46,42 +48,48 @@ const HomePage = () => {
         // height={'50vh'}
       >
         <Grid container columns={12}>
-          <Grid
-            item
-            lg={9}
-            md={9}
-            sm={9}
-            xs={9}
-            textAlign={"left"}
-            p={{ sm: 2.5, xs: 0 }}
-            pt={{ sm: 2.5, xs: 2 }}
-          >
-            <img
-              src="https://studyvillage.org/wp-content/uploads/2020/10/Logo-long-green-white_Artboard-6-15.png"
-              alt=""
-              width={300}
-            />
+          <Grid item lg={9} md={9} sm={9} xs={8} textAlign={"left"} p={5} pt={{lg:5,md:3,xs:1}}>
+            <Link to={"/"}>
+              <img
+                src="https://i.postimg.cc/tgNXTJck/svLogo.png"
+                alt=""
+                width={200}
+              />
+            </Link>
+          </Grid>
+          <Grid item  xs={1}  pt={6}  mt={1} textAlign={'center'}>
+            <Box maxWidth={'100px'} maxHeight={'95px'} width={'100%'} height={{md:'auto',xs:'auto'}} textAlign={'center'}>
+
+            <img src={MABECSlogo} alt="" width={'100%' } height={'100%'}/>
+            </Box>
           </Grid>
           <Grid
             item
-            lg={3}
-            md={3}
-            sm={3}
-            xs={3}
+            lg={1}
+            md={1}
+            sm={1}
+            xs={1}
             textAlign={"right"}
-            sx={{ pt: { xs: 2, sm: 1.8, md: 1, lg: 0.5 } }}
+            p={5}
+            sx={{ p: { xs: 2, sm: 3, md: 4, lg: 5 }}}
           >
             <IconButton
               onClick={() => setOpen(true)}
-              sx={{ alignSelf: "flex-end" }}
+            //   sx={{ alignSelf: "flex-end" }}
               disableRipple
             >
               <MenuIcon
+                // sx={{
+                // //   width: { lg: 180, md: 100, sm: 80, xs: 50 },
+                // width:500,
+                //   color: "yellow",
+                //   height: { lg: 70, md: 60, sm: 50, xs: 40 },
+                // }}
                 sx={{
-                  width: { lg: 180, md: 100, sm: 80, xs: 50 },
-                  color: "yellow",
-                  height: { lg: 70, md: 60, sm: 50, xs: 40 },
-                }}
+                    color: "yellow",
+                    height: "100px",
+                    width: { xs: "55px", sm: "70px", md: "100px" },
+                  }}
               />
             </IconButton>
             <MainMenu open={open} setOpen={setOpen} />
@@ -96,15 +104,15 @@ const HomePage = () => {
           textAlign={"center"}
           height={"30px"}
           width={"250px"}
-          border={"1px solid yellow"}
+          border={"1px solid skyblue"}
           borderRadius={2.5}
-          color={"yellow"}
+          color={"white"}
           justifyContent={"center"}
           margin={"0 auto"}
           mt={2}
           pt={1}
         >
-          <Typography fontStyle={"italic"}>WHAT DO YOU WANT TO DO?</Typography>
+          <Typography fontStyle={"italic"}> <b> WHAT DO YOU WANT TO DO?</b></Typography>
         </Box>
         <Box
           display={"flex"}
