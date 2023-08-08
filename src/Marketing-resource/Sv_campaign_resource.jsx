@@ -44,7 +44,7 @@ const Sv_campaign_resource = () => {
             textAlign={"justify"}
             pr={{ md: 2, sm: 1, xs: 0 }}
           >
-            <Typography fontSize={"medium"}>
+            <Typography fontSize={"medium"} color={'yellow'}>
               Here's some amazing partner resources that are yours to use. The
               order below suggest a typical StudyVillage campaign lifecycle,
               though you're free to use as you wish. We're always adding to this
@@ -72,7 +72,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -88,7 +88,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <img
@@ -125,7 +125,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -143,7 +143,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <img
@@ -179,7 +179,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -197,7 +197,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <img
@@ -233,7 +233,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -251,7 +251,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <YouTube
@@ -290,7 +290,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -306,7 +306,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <img
@@ -343,7 +343,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -361,7 +361,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 {/* <ImportantDevicesRoundedIcon
@@ -409,7 +409,7 @@ const Sv_campaign_resource = () => {
           pb={2}
           pr={1}
         >
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -426,7 +426,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <img
@@ -457,7 +457,7 @@ const Sv_campaign_resource = () => {
         </Grid>
 
         <Grid container columns={12} mt={4} pr={1}>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box m={0} p={0} display={"flex"}>
               <Typography
                 sx={{ fontSize: "80px", color: "yellow", mr: 10, ml: 2 }}
@@ -476,7 +476,7 @@ const Sv_campaign_resource = () => {
               </h4>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={0}>
+          <Grid item lg={6} md={6} sm={12} xs={12} m={0} p={1}>
             <Box display={"flex"} width={"100%"}>
               <Box sx={{ width: "10%", mt: { sm: 4, xs: 1 } }}>
                 <img

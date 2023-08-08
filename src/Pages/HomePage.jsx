@@ -79,12 +79,6 @@ const HomePage = () => {
               disableRipple
             >
               <MenuIcon
-                // sx={{
-                // //   width: { lg: 180, md: 100, sm: 80, xs: 50 },
-                // width:500,
-                //   color: "yellow",
-                //   height: { lg: 70, md: 60, sm: 50, xs: 40 },
-                // }}
                 sx={{
                     color: "yellow",
                     height: "100px",
@@ -97,7 +91,7 @@ const HomePage = () => {
         </Grid>
       </Box>
       <Box
-        pb={4}
+        pb={9.5}
         sx={{ backgroundColor: "#121F28", borderTop: "1px solid yellow" }}
       >
         <Box
@@ -124,7 +118,7 @@ const HomePage = () => {
         >
           <Box
             // width={"30%"}
-            height={"220px"}
+            height={"180px"}
             sx={{
               backgroundColor: "black",
               color: "white",
@@ -135,7 +129,7 @@ const HomePage = () => {
               p: 0,
             }}
           >
-            <Box width={"100%"} height={"220px"}>
+            <Box width={"100%"} height={"180PX"}>
               <img src={pic37} alt="s1" width={"100%"} height={"99%"} />
             </Box>
             <Typography
@@ -150,7 +144,7 @@ const HomePage = () => {
           </Box>
           <Box
             // width={"30%"}
-            height={"220px"}
+            height={"180px"}
             sx={{
               backgroundColor: "black",
               color: "white",
@@ -161,7 +155,7 @@ const HomePage = () => {
               p: 0,
             }}
           >
-            <Box width={"100%"} height={"220px"}>
+            <Box width={"100%"} height={"180px"}>
               <img src={pic38} alt="s1" width={"100%"} height={"99%"} />
             </Box>
             <Typography
@@ -176,18 +170,18 @@ const HomePage = () => {
           </Box>
           <Box
             // width={"30%"}
-            height={"220px"}
+            height={"180px"}
             sx={{
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
               width: { xs: "350px", md: "300px", lg: "272px" },
-              // height: { xs: "200px", sm: "200px", md: "220px", lg: "260px" },
+              // height: { xs: "200px", sm: "200px", md: "180px", lg: "260px" },
               mb: 5,
               p: 0,
             }}
           >
-            <Box width={"100%"} height={"220px"}>
+            <Box width={"100%"} height={"180px"}>
               <img src={pic39} alt="s1" width={"100%"} height={"99%"} />
             </Box>
             <Typography
@@ -203,18 +197,18 @@ const HomePage = () => {
 
           <Box
             // width={"30%"}
-            height={"220px"}
+            height={"180px"}
             sx={{
               backgroundColor: "black",
               color: "white",
               border: "1px solid yellow",
               width: { xs: "350px", md: "300px", lg: "272px" },
-              // height: { xs: "200px", sm: "200px", md: "220px", lg: "260px" },
+              // height: { xs: "200px", sm: "200px", md: "180px", lg: "260px" },
               mb: 5,
               p: 0,
             }}
           >
-            <Box width={"100%"} height={"220px"}>
+            <Box width={"100%"} height={"180px"}>
               <img src={pic40} alt="s1" width={"100%"} height={"99%"} />
             </Box>
             <Typography

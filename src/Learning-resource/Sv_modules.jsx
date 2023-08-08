@@ -22,6 +22,51 @@ import transpc from "../Learning-resource/learning-assets/transpc.PNG";
 import transtab from "../Learning-resource/learning-assets/transtab.PNG";
 const Sv_modules = () => {
   return (
+    <>
+    {/* <Box
+        sx={{
+          backgroundColor: "#121F28",
+          pb: 12,
+          color: "white",
+          //   maxWidth: "1050px",
+          width: "100%",
+          p: "12px",
+          pl: { lg: 6, xs: 1 },
+          mt: 3,
+          ml: 1,
+        }}
+      > */}
+        <Grid container columns={16} columnSpacing={0} ml={1} pl={{lg:6,xs:1}}>
+          <Grid item lg={3} md={3} sm={4} xs={8}>
+            <Typography
+              sx={{
+                fontFamily: "Brush Script MT, Brush Script Std, cursive",
+                color: "white",
+                fontSize: { lg: "2.2vw", md: "2.5vw", sm: "3vw", xs: "5vw" },
+                textAlign: "left",
+                display: { md: "inline-block" },
+              }}
+            >
+              Happy healthy & wise
+            </Typography>
+          </Grid>
+          
+          <Grid item lg={13} md={13} sm={12} xs={16} alignItems={"center"}>
+            <Divider
+              sx={{
+                color: "blue",
+                // margin: "0 auto",
+                // width: "100%",
+                marginTop: { lg: "3.2vh", md: "2.8vh", sm: "2vh" },
+                alignSelf: "center",
+                // marginLeft: "33px",
+                height: "0.5px",
+                border: "none",
+                borderBottom: "1px solid skyblue",
+              }}
+            />
+          </Grid>
+        </Grid>
     <Box
       sx={{
         ml: { md: 6, sm: 3, xs: 0 },
@@ -33,7 +78,7 @@ const Sv_modules = () => {
       }}
     >
       {/* <Box display={"flex"}> */}
-        <Grid container columns={12} columnSpacing={2}>
+        {/* <Grid container columns={12} columnSpacing={2}>
           <Grid item lg={2} md={3} sm={3} xs={12}>
           <Typography
           sx={{
@@ -62,7 +107,7 @@ const Sv_modules = () => {
               }}
             />
           </Grid>
-        </Grid>
+        </Grid> */}
         
         
       {/* </Box> */}
@@ -541,6 +586,8 @@ const Sv_modules = () => {
         </Grid>
       </Grid>
     </Box>
+    {/* </Box> */}
+    </>
   );
 };
 
